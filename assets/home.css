@@ -1,0 +1,187 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00bfff;
+}
+
+/* Hero section */
+/* .hero {
+  background: linear-gradient(to right, #004080, #0066cc);
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+} */
+.hero {
+  background: linear-gradient(120deg, #004080 0%, #00bfff 100%),
+    url("../assets/hero-bg.svg") center/cover no-repeat;
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Section styling */
+.section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.section ul.service-list {
+  list-style: disc inside;
+  padding-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  nav a {
+    margin: 10px 10px 0 0;
+    display: inline-block;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+}
+.section-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.section-row .section {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 2rem 1.5rem;
+  min-width: 280px;
+  max-width: 400px;
+  flex: 1 1 320px;
+}
+
+.section-row h2 {
+  margin-top: 0;
+  color: #1a237e;
+}
+
+.section-row .service-list {
+  padding-left: 1.2em;
+  list-style: disc;
+}
+
+.section-row #contact a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.section-row #contact a:hover {
+  text-decoration: underline;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.site-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+}

@@ -1,0 +1,132 @@
+/* Reset and layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  padding-bottom: 80px; /* Reserve space for footer */
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00bfff;
+}
+
+/* Main content */
+.section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.page-title {
+  font-size: 2.2em;
+  color: #003366;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.service-item {
+  background-color: #f0f5ff;
+  padding: 20px;
+  border-left: 6px solid #007acc;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.service-item h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.site-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+}
